@@ -1,0 +1,14 @@
+This project contains two C Source code
+
+1. Longest common subsequence using Dynamic Programming
+2. Floyd-Warshall algorithm to find the shortest paths between all pairs of vertices
+
+To run LCS : 
+    1. Compile the source code using gcc -o lcs.out lcs.c 
+    2. Run the executable by ./lcs.out <input-string-1> <input-string-2> 
+    3. It will print out the output on command line.
+
+To run Floyd-Warshall algorithm:
+    1. Compile the source code using gcc floyd.c
+    2. Run the executable by providing a input .txt file by ./a.out <graph-file-name>
+    3. It will produce output.txt file with the PMatrix and shortest distance from each vertices
