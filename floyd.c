@@ -31,6 +31,7 @@ void print_pmatrix(int p_size, int dist_pointer[p_size][p_size], int problem_num
 {
     printf("Problem%d: n = %d\n", problem_number, p_size);
     fprintf(output_file, "Problem%d: n = %d\n", problem_number, p_size);
+    printf("Pmatrix: \n");
     fprintf(output_file, "Pmatrix: \n");
     // Print the shortest path lengths along with their corresponding vertices
     for (int row = 0; row < p_size; row++)

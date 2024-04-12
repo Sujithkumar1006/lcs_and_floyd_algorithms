@@ -3,10 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc != 3 || strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
+    // if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
+    // {
+    //     printf("Usage: ./lcs <string1> <string2>\n");
+    //     return 0;
+    // }
+    if (argc > 3)
     {
-        printf("Usage: ./lcs <string1> <string2>\n");
-        return 0;
+        printf("error\n");
+        return -1;
+    }
+    else if (strlen(argv[1]) > 100 || strlen(argv[2]) > 100)
+    {
+        printf("the string length too long\n");
+        return -2;
     }
 
     int str1_length = strlen(argv[1]);
@@ -59,6 +69,6 @@ int main(int argc, char *argv[])
         else
             temp_s2_len--;
     }
-    printf("LCS: %s\n",lcs);
+    printf("LCS: %s\n", lcs);
     return 0;
 }
